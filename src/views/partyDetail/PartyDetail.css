@@ -1,0 +1,32 @@
+.detailContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 2rem 3rem;
+}
+
+.detailBox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.partyLogo{
+    text-align: center;
+}
+.partyLogo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

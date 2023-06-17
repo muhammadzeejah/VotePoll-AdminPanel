@@ -1,0 +1,262 @@
+.addPartyContainer{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.addPartyBox{
+position: relative;
+max-width: 0%;
+background-color: white;
+border-radius: 10px;
+padding: 20px 25px;
+max-height: 80%;
+box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.2);
+overflow-y: auto;
+}
+
+.input{
+  border: 1px solid #d9e0e8;
+  border-radius: 4px;
+  padding: 8.5px;
+  width: 100%;
+}
+
+label{
+  font-weight: 500;
+  margin-bottom: 2px;
+  margin-left: 2px;
+}
+
+.input:focus{
+  outline: none;
+}
+.input[type=file]{
+padding: 5px;
+}
+
+.inputContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+}
+
+.inputBox{
+  width: 100%;
+}
+
+.crossIcon{
+position: absolute;
+top: 8px;
+right: 8px;
+width: 20px;
+height: 20px;
+cursor: pointer;
+}
+
+.buttonContainer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+.button {
+  color: white;
+  background-color: #3c4b64;
+  border: 1px solid #3c4b64;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+.closeButton {
+  color: #3c4b64;
+  background-color: white;
+  border: 1px solid #3c4b64;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+.closeButton:hover{
+  color: white;
+  background-color: #3c4b64;
+}
+
+.button:hover {
+  background-color: #505d74;
+  border: 1px solid #505d74;
+}
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+  opacity: 0.6;
+}
+
+.dropdownContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.dropdownBox{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  padding: 5px 5px 5px 10px;
+  min-height: 45px;
+  cursor: pointer;
+  border: 1px solid #d9e0e8;
+}
+
+.selectedText{
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.dropdownText{
+  color: #6f6f6f;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 14px;
+  cursor: pointer;
+}
+
+@keyframes animateFromBottom {
+  from {
+    transform: translate3d(0, 10px, 0);
+    opacity: 0
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}
+
+.SelectboxContainer{
+  max-height: 150px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin-top: 0.4rem;
+  animation-name: animateFromBottom;
+  animation-duration: 0.3s;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 4px 1px 15px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  overflow-y: auto;
+}
+
+.SelectBox{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.Text{
+  margin-bottom: 0rem;
+  color: #6f6f6f;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 0px 10px;
+  padding-bottom: 2px;
+}
+
+.dropdownSearch{
+  width: 100%;
+  padding: 8px 15px;
+  border: none;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.dropdownSearch:focus{
+  outline: none;
+}
+
+.checkboxWrapper{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.MultipleCheckbox{
+  width: 19px;
+  height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #505d74;
+  border-radius:5px;
+}
+
+.isChecked{
+  background-color: #505d74;
+  width: 19px;
+  height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #505d74;
+  border-radius:5px;
+}
+
+.DurationBox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 32px;
+  max-height: 32px;
+  background-color: #f0eeff;
+  border: 2px solid var(--purple-100);
+  border-radius: 25px;
+  padding: 0px 5px;
+  overflow: hidden;
+}
+
+.DurationTime{
+  padding-bottom: 2px;
+  margin: 0 0.7rem 0 0.6rem;
+  font-size: 14px;
+  vertical-align: unset;
+  color: #616161;
+}
+
+.DeleteDuration{
+  position: relative;
+  background-color: #505d74;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  color: white;
+}
+
+@media only screen and (max-width: 768px){
+  .inputContainer{
+    flex-direction: column;
+    gap: 15px;
+  }
+  .addPartyBox{
+    max-width: 80%;
+  }
+}

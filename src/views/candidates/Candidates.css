@@ -1,0 +1,84 @@
+.candidate-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 25px;
+  padding: 2rem 3rem;
+}
+
+.candidate-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.search {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #d9e0e8;
+  border-radius: 4px;
+}
+
+.search:focus {
+  outline: none;
+}
+.page-link{
+  color: #505d74;
+}
+
+.page-link.active, .active > .page-link{
+  background-color: #505d74;
+  border-color: #505d74;
+}
+
+.logo{
+  height: 30px;
+  width: 30px;
+  border: none;
+  border-radius: 50px;
+}
+.icons{
+  text-align: center;
+}
+
+.deleteIcon{
+  cursor: pointer;
+  margin-left: 10px;
+}
+.deleteIcon:hover{
+  color: red;
+}
+.editIcon{
+  cursor: pointer;
+}
+.editIcon:hover{
+  color: green;
+}
+
+.spinner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5px;
+  width: 100%;
+}
+
+.disabledPagination{
+  cursor: not-allowed;
+}
+
+@media only screen and (max-width: 768px){
+  .search {
+      width: 50%;
+  }
+  .deleteIcon{
+      margin-left: 5px;
+  }
+}

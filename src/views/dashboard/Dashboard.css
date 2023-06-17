@@ -1,0 +1,8 @@
+.dashboardCard{
+    min-height: 100px;
+    cursor: pointer;
+}
+.dashboardCard:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+  }
