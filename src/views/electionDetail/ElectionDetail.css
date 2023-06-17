@@ -1,0 +1,56 @@
+.detailContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 2rem 3rem;
+}
+
+.detailBox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.partyLogo{
+    text-align: center;
+}
+.partyLogo img{
+    width: 150px;
+    border-radius: 100%;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-title{
+    width: 50%;
+}
+
+.UCs{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width:768px){
+    .info{
+        flex-direction: column;
+        align-items: start;
+    }
+    .card-title{
+        width: 100%;
+    }
+    .UCs{
+        justify-content: start;
+        width: 100%;
+    }
+}

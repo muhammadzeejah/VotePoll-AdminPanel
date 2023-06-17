@@ -1,0 +1,115 @@
+.button {
+    color: white;
+    background-color: #3c4b64;
+    border: 1px solid #3c4b64;
+}
+
+.button:hover {
+    background-color: #505d74;
+    border: 1px solid #505d74;
+}
+
+.registerBox {
+    width: 44%;
+    background-color: #2a3446;
+}
+
+.registerLink {
+    display: none;
+}
+
+.addPartyContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.addPartyBox {
+    position: relative;
+    max-width: 80%;
+    min-width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 25px;
+    max-height: 80%;
+    box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    opacity: 0.6;
+}
+
+.closeButton {
+    color: #3c4b64;
+    background-color: white;
+    border: 1px solid #3c4b64;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.closeButton:hover {
+    color: white;
+    background-color: #3c4b64;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.button {
+    color: white;
+    background-color: #3c4b64;
+    border: 1px solid #3c4b64;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.button:hover {
+    background-color: #505d74;
+    border: 1px solid #505d74;
+}
+.crossIcon{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.resetContainer{
+    width: 50%;
+}
+@media only screen and (max-width: 576px) {
+    .registerBox {
+        display: none;
+    }
+
+    .registerLink {
+        display: block;
+        margin-right: 20px;
+    }
+    .resetContainer{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 576px){
+    .innerBox{
+        display: flex;
+    }
+}

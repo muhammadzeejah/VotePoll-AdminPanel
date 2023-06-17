@@ -1,0 +1,123 @@
+.addPartyContainer{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.addPartyBox{
+position: relative;
+min-width: 60%;
+max-width: 100%;
+background-color: white;
+border-radius: 10px;
+padding: 20px 25px;
+max-height: 80%;
+box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.2);
+overflow-y: auto;
+}
+
+.input{
+  border: 1px solid #d9e0e8;
+  border-radius: 4px;
+  padding: 8.5px;
+  width: 100%;
+}
+
+label{
+  font-weight: 500;
+  margin-bottom: 2px;
+  margin-left: 2px;
+}
+
+.input:focus{
+  outline: none;
+}
+.input[type=file]{
+padding: 5px;
+}
+
+.inputContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+}
+
+.inputBox{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.crossIcon{
+position: absolute;
+top: 8px;
+right: 8px;
+width: 20px;
+height: 20px;
+cursor: pointer;
+}
+
+.buttonContainer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+.button {
+  color: white;
+  background-color: #3c4b64;
+  border: 1px solid #3c4b64;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+.closeButton {
+  color: #3c4b64;
+  background-color: white;
+  border: 1px solid #3c4b64;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+.closeButton:hover{
+  color: white;
+  background-color: #3c4b64;
+}
+
+.button:hover {
+  background-color: #505d74;
+  border: 1px solid #505d74;
+}
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+  opacity: 0.6;
+}
+
+.upload{
+  border: 1px solid #d9e0e8;
+  background-color: white;
+  min-height: 40px;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+  .inputContainer{
+    flex-direction: column;
+    gap: 15px;
+  }
+  .addPartyBox{
+    max-width: 80%;
+  }
+}
