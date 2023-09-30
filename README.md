@@ -1,15 +1,54 @@
-# VotePoll-AdminPanel
-Our online voting system, backed by blockchain technology, revolutionizes the democratic process by ensuring security, transparency, and convenience. The system comprises three main components: a citizen registration interface, a user-friendly voting website, and a comprehensive admin panel.
+# VotePoll Admin Panel: Election Commission Interface
 
--- Citizen registration:
-The citizen registration interface utilizes cutting-edge face recognition technology powered by face-api.js. This ensures accurate and secure registration of citizens, adding an extra layer of authentication and preventing duplicate registrations.
+## Description
 
--- VotePoll-Website:
-Registered users can then access the voting website, where they can securely log in and cast their votes. The blockchain technology underlying the system guarantees tamper-proof and immutable records, ensuring the integrity and transparency of the voting process. This empowers citizens to participate in elections from the comfort of their own homes, enhancing accessibility and convenience.
+The VotePoll Admin Panel serves as the central hub for election management, providing administrators with full control over the system. This interface is designed for the Election Commission to manage elections, monitor real-time vote counts retrieved from the blockchain, and securely publish election results. It streamlines administrative tasks by allowing the management of parties, candidates, constituencies, and other relevant information.
 
--- VotePoll-AdminPanel:
-The admin panel serves as the central hub for election management. Administrators have full control over the system, with the ability to open elections, monitor real-time vote counts retrieved from the blockchain, and publish results securely. They can also effortlessly manage parties, candidates, and constituencies by adding, updating, deleting, and viewing relevant information. This streamlines administrative tasks and ensures accurate representation throughout the electoral process.
+## Features
 
-With our online voting system, citizens can exercise their voting rights with confidence, knowing that their votes are securely stored on the blockchain. The face recognition-based registration process adds an extra layer of security, preventing fraudulent activities. Meanwhile, the admin panel empowers administrators to efficiently manage elections, ensuring transparency and facilitating informed decision-making.
+- **Election Management:** Open and manage elections with ease, ensuring accurate representation throughout the electoral process.
+- **Real-Time Vote Counts:** Monitor real-time vote counts retrieved from the blockchain, enabling instant access to election progress.
+- **Secure Results Publishing:** Safely publish election results to maintain transparency and credibility.
+- **Party and Candidate Management:** Add, update, delete, and view parties, candidates, and constituencies effortlessly.
+- **User-Friendly Interface:** An intuitive and user-friendly interface for efficient election administration.
+- **Customization:** Built on the CoreUI Free React Admin Template, providing flexibility for customization and extension.
 
-Experience the future of voting with our state-of-the-art online voting system backed by blockchain, providing a secure, user-friendly, and transparent platform for democratic participation.
+## Getting Started
+
+1. Clone the repository.
+2. Install dependencies with `npm install`.
+3. Start the development server with `npm start`.
+4. Access the admin panel via `http://localhost:PORT`, where `PORT` is the configured port (default is 3000).
+
+## Dependencies
+
+- CoreUI Free React Admin Template
+- React
+- React DOM
+- React Router DOM
+- React Redux
+- Redux
+- Redux Thunk
+- Axios
+- Chart.js
+- Moment.js
+- Ethers.js
+- React Icons
+- Multiselect React Dropdown
+- React Paginate
+- React Toastify
+- Simplebar React
+- CoreUI React components and utilities
+
+## Scripts
+
+- `npm start`: Start the development server.
+- `npm build`: Build the production-ready application.
+
+## License
+
+- This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+- For questions or support, please contact Muhammad Zeeja at muhammadzeejah1122@gmail.com.
